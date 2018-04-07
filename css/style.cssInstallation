@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #00AEFF;
+  height: 150px;
+  display: flex;
+  justify-content: space-around; }
+  header .logo {
+    background-color: #36C3FF;
+    width: 25%;
+    height: 50%;
+    align-self: center; }
+  header .menu {
+    background-color: #009BDD;
+    width: 25%;
+    height: 50%;
+    align-self: center; }
+  @media only screen and (max-width: 1280px) {
+    header {
+      justify-content: space-between; }
+    header .logo, header .menu {
+      margin: 40px; } }
+  @media only screen and (max-width: 375px) {
+    header {
+      justify-content: flex-start; }
+    header .logo {
+      flex-wrap: wrap;
+      width: 90%; } }
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  main .container {
+    display: flex;
+    width: 75%;
+    height: 700px; }
+  main .first_block {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    background-color: #ff5607;
+    width: 20%; }
+  main .second_block {
+    display: flex;
+    height: 100%;
+    background-color: wheat;
+    width: 80%; }
+
+.first_block .aside_item {
+  background-color: #E84900;
+  height: 30px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center; }
+
+.second_block .top_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  height: 35%;
+  padding: 20px;
+  padding-right: 0; }
+.second_block .photo {
+  background-color: #FFBD00;
+  width: 40%; }
+.second_block .text_info {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+  .second_block .text_info .item {
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    background-color: #CECECE; }
+
+.bottom_container {
+  display: flex; }
+
+/*# sourceMappingURL=style.cssInstallation.map */
